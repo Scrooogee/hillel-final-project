@@ -1,0 +1,73 @@
+.team {
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+     
+    &__article {
+        display: flex;
+        flex-direction: column;
+        border-radius: 12px;
+        margin-bottom: 30px;
+    }
+
+    &__img img { 
+        height: 500px;
+        object-fit: cover;
+        display: block;
+        border-radius: 12px 12px 0 0;
+    }
+
+    &__text-box {
+        padding: 30px;
+        background-color: $gray-bg;
+        border-radius: 0 0 12px 12px;
+    }
+
+    &__copy {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $text-gradient-2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $gray-text;
+    }
+
+    &__post {
+        font-size: 14px;
+        line-height: 22px;
+        color: $gray-text;
+    }
+
+    &__button-box {
+        text-align: center;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        background-color: $blue-regular;
+        opacity: 0.2;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__button:not(:last-child) {
+        margin-right: 15px;
+    }
+}

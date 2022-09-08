@@ -37,11 +37,11 @@
         text-align: center;
         color: $blue-regular;
         white-space: nowrap;
-    }
 
-    & .active {
-        color: $pink;
-        border-bottom: 2px solid $pink;
+        &_active {
+            color: $pink;
+            border-bottom: 2px solid $pink;
+        }
     }
 
     @media (min-width: 769px) {
