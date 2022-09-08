@@ -696,9 +696,6 @@ a:hover {
 }
 
 .team__text-box {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -725,7 +722,6 @@ a:hover {
 }
 
 .team__name {
-  margin-top: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -773,6 +769,7 @@ a:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    width: 100%;
   }
   .team__img {
     width: 45%;
@@ -784,6 +781,18 @@ a:hover {
   .team__text-box {
     width: 55%;
     border-radius: 0 12px 12px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team__article {
+    height: 344px;
+  }
+  .team__img {
+    width: 30%;
+  }
+  .team__text-box {
+    width: 70%;
   }
 }
 
