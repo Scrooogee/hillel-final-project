@@ -1,0 +1,50 @@
+.offer {
+    padding-top: 88px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titel {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        max-width: 315px;
+        margin-bottom: 159px;
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 42px;
+        height: 42px;
+        background-color: transparent;
+        border-radius: 50%;
+        border: 2px solid rgba($color: #ffff, $alpha: 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4px;
+        & svg {
+            display: block;
+        }
+    }
+
+    @media (min-width: 769px) {
+        padding-top: 219px;
+        
+        &__titel {
+            max-width: 600px;
+            margin-bottom: 417px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+        padding-top: 195px;
+        
+        &__titel {
+            margin-bottom: 289px;
+        }
+    }
+}
