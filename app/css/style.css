@@ -20,6 +20,10 @@
           box-sizing: border-box;
 }
 
+.html {
+  scroll-behavior: smooth;
+}
+
 .body {
   font-family: 'Montserrat', 'Arial', sans-serif;
   font-weight: normal;
@@ -411,10 +415,8 @@ a:hover {
 }
 
 .offer__btn {
-  cursor: pointer;
   width: 42px;
   height: 42px;
-  background-color: transparent;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0.5);
   display: -webkit-box;
@@ -427,6 +429,7 @@ a:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 4px;
+  text-decoration: none;
 }
 
 .offer__btn svg {
