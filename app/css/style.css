@@ -685,6 +685,7 @@ a:hover {
 }
 
 .team__article {
+  background-color: #F5F5FA;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,6 +694,7 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px;
+  border-radius: 12px;
 }
 
 .team__img img {
@@ -713,8 +715,6 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 30px;
-  background-color: #F5F5FA;
-  border-radius: 0 0 12px 12px;
 }
 
 .team__copy {
@@ -920,7 +920,7 @@ a:hover {
 
 .blog__article {
   background-color: #FFFFFF;
-  border-radius: 0px 0px 8px 8px;
+  border-radius: 8px;
 }
 
 .blog__img img {
