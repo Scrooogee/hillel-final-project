@@ -9,7 +9,8 @@
     }
 
     &__article {
-        height: 100%;
+        background-color: $white;
+        border-radius: 0px 0px 8px 8px;
     }
 
     &__img img {
@@ -21,8 +22,6 @@
 
     &__text-box {
         padding: 30px;
-        background-color: $white;
-        border-radius: 0px 0px 8px 8px;
     }
 
     &__link {
