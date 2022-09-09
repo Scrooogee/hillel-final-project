@@ -101,3 +101,21 @@ a {
         background-image: url(../img/h-bkg_mid.svg);
     }
 }
+
+.titel {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 46px;
+    background: $text-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+    @media (min-width: 769px) {
+        &__titel {
+            font-size: 38px;
+        }
+    }
+}

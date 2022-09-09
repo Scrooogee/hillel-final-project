@@ -124,6 +124,24 @@ a:hover {
   }
 }
 
+.titel {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 769px) {
+  .titel__titel {
+    font-size: 38px;
+  }
+}
+
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -469,6 +487,7 @@ a:hover {
 }
 
 .tab__item {
+  cursor: pointer;
   background-color: transparent;
   border: none;
   white-space: nowrap;
@@ -565,18 +584,6 @@ a:hover {
   }
 }
 
-.services__titel {
-  margin-top: 10px;
-  margin-bottom: 30px;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
 .services__products {
   display: grid;
   grid-template-columns: 1fr;
@@ -620,8 +627,7 @@ a:hover {
 }
 
 @media (min-width: 769px) {
-  .services__titel {
-    font-size: 38px;
+  .services h2 {
     margin-bottom: 60px;
   }
   .services__products {
@@ -796,6 +802,184 @@ a:hover {
   }
   .team__text-box {
     width: 70%;
+  }
+}
+
+.partners__titel {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.partners__cards-box {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6fr;
+}
+
+.partners__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+  height: 120px;
+}
+
+.partners__card_screen_big {
+  display: none;
+}
+
+.partners__card_hillel {
+  background-color: #1C4280;
+}
+
+.partners__card_wannabiz {
+  background-color: #143646;
+}
+
+.partners__card_taggerin {
+  background-color: #F48B30;
+}
+
+.partners__card_look {
+  background-color: #9E4DC3;
+}
+
+.partners__card_orangera {
+  background-color: #FD9339;
+}
+
+.partners__card_addtellig {
+  background-color: #E2E2E4;
+}
+
+.partners__card_clickky {
+  background-color: #C71C36;
+}
+
+.partners__card_ecolease {
+  background-color: #DCF3F9;
+}
+
+.partners__card_infatek {
+  background-color: #EAEAEA;
+}
+
+.partners__card_citypark {
+  background-color: #282240;
+}
+
+.partners__card_artprint {
+  background-color: #1D4568;
+}
+
+.partners__card_ultimade {
+  background-color: #000000;
+}
+
+@media (min-width: 769px) {
+  .partners__cards-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .partners__card_screen_big {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (min-width: 1025px) {
+  .partners__cards-box {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.blog {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #F5F5FA;
+}
+
+.blog__article-box {
+  display: grid;
+  gap: 30px;
+}
+
+.blog__article {
+  height: 100%;
+}
+
+.blog__img img {
+  border-radius: 8px 8px 0px 0px;
+  height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.blog__text-box {
+  padding: 30px;
+  background-color: #FFFFFF;
+  border-radius: 0px 0px 8px 8px;
+}
+
+.blog__link {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.blog__date {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+}
+
+.blog__copy {
+  padding-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
+  border-top: 4px solid #E6E6F0;
+}
+
+@media (min-width: 769px) {
+  .blog__article-box {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 2fr;
+  }
+  .blog__article_span_two {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blog__article-box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .blog__article_span_two {
+    grid-column: span 1;
   }
 }
 
