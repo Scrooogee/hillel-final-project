@@ -1,0 +1,83 @@
+.achievements {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    &__titel {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $darkblue;
+    }
+
+    &__cards {
+        padding: 30px;
+        display: grid;
+    }
+
+    &__card {
+        height: 90px;
+        background-color: $white;
+        // object-fit: cover;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        &_screen_big {
+            display: none;
+        }
+    }
+
+    &__button-box {
+        text-align: center;
+    }
+
+    &__button {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        border: none;
+        border-radius: 50%;
+        background-color: $blue-regular;
+        opacity: 0.2;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+
+    &__button:not(:last-child) {
+        margin-right: 14px;
+    }
+
+    @media(min-width: 769px) {
+        &__cards {
+            padding-right: 0;
+            padding-left: 0;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        &__card {
+            &_screen_big {
+                display: flex;
+            }
+        }
+
+        &__button {
+            &.d-none {
+                display: none;
+            }
+        }
+    }
+
+    @media(min-width: 1025px) {
+        &__card {
+            height: 110px;
+        }
+    }
+
+}
