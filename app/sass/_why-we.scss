@@ -1,0 +1,49 @@
+.why-we {
+    margin-bottom: 30px;
+    &__article {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__copy {
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+    }
+
+    &__copy:not(:last-child){
+        margin-bottom: 30px;
+    }
+
+    &__items-box {
+        border-left: 4px solid $gray-separator;
+        padding: 0 0 0 30px;
+    }
+
+    &__item:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__item > .titel {
+        margin-bottom: 10px;
+    }
+
+    &__item-copy {
+        font-size: 16px;
+        line-height: 20px;
+        color: $darkblue;
+    }
+
+    @media(min-width: 1025px) {
+        margin-bottom: 60px;
+
+        &__article {
+            grid-template-columns: 53% 47%;
+        }
+
+        &__items-box {
+            padding: 0 30px 0 30px;
+        }
+    }
+
+}

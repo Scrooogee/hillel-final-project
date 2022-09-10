@@ -1,0 +1,32 @@
+.quality {
+    padding-bottom: 30px;
+    
+    &__box {
+        display: grid;
+        gap: 30px;
+    }
+
+    &__box > .titel {
+        margin-top: 0;
+    }
+
+    &__copy {
+        font-size: 19px;
+        line-height: 30px;
+        color: $black;
+    }
+
+    &__copy:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    @media(min-width: 1025px) {
+        &__box {
+            grid-template-columns: 53% 47%;
+        }
+
+        &__box > .titel {
+            max-width: 362px;
+        }
+    }
+}
