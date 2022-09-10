@@ -77,6 +77,10 @@
             font-size: 16px;
             line-height: 20px;
             color: $white;
+            &:hover {
+                color: $white;
+                border-bottom: 2px solid $white;
+            }
             &_white-bkg {
                 color: $blue-regular;
                 &:hover {
@@ -84,15 +88,10 @@
                     border-bottom: 2px solid $blue-regular;
                 }
             }
-            &:hover {
-                color: $white;
-                border-bottom: 2px solid $white;
-            }
         }
     }
 
     @media (min-width: 1025px) {
-        grid-column: span 2;
         justify-self: flex-end;
         align-self: flex-start;
 

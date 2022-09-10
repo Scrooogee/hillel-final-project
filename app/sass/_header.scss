@@ -1,6 +1,6 @@
 .header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 40%;
     grid-template-rows: min-content min-content;
     padding-bottom: 30px;
     
@@ -26,6 +26,9 @@
             background-repeat: no-repeat;
             width: 12px;
             height: 26px;
+        }
+        &__d-none {
+            display: none;
         }
     }
 
@@ -65,6 +68,7 @@
     }
 
     &__link-active {
+        color: $white;
         background: #F0145A;
     }
 
@@ -125,6 +129,18 @@
             margin: 0 -60px 15px;
         }
 
+        &__link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            color: $white;
+        }
+
+        &__link {
+            &_white-bkg:hover {
+                color: $gray-text;
+                background: $gray-bg;
+            }
+        }
+
         &__top {
             justify-content: flex-start;
         }
@@ -177,17 +193,13 @@
 
     @media (min-width: 1025px) {   
 
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 40% 60%;
 
         &__top-box {
             justify-self: flex-end;
             align-self: flex-end;
             padding: 0;
-        }
-
-        &__link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: $white;
+            grid-column: span 1;
         }
 
         &__logo-box {
