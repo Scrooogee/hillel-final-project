@@ -88,6 +88,11 @@
                     border-bottom: 2px solid $blue-regular;
                 }
             }
+
+            &_active {
+                color: $pink;
+                border-bottom: 2px solid $pink;
+            }
         }
     }
 

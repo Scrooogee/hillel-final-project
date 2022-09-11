@@ -56,24 +56,6 @@
         text-align: center;
     }
 
-    &__button {
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-        border: none;
-        border-radius: 50%;
-        background-color: $blue-regular;
-        opacity: 0.2;
-
-        &.active {
-            opacity: 1;
-        }
-    }
-
-    &__button:not(:last-child) {
-        margin-right: 15px;
-    }
-
     @media(min-width: 769px) {
         &__copy {
             font-size: 38px;

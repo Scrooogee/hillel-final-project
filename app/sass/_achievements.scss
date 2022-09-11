@@ -20,7 +20,6 @@
     &__card {
         height: 90px;
         background-color: $white;
-        // object-fit: cover;
         border-radius: 12px;
         display: flex;
         align-items: center;
@@ -33,20 +32,6 @@
 
     &__button-box {
         text-align: center;
-    }
-
-    &__button {
-        cursor: pointer;
-        width: 16px;
-        height: 16px;
-        border: none;
-        border-radius: 50%;
-        background-color: $blue-regular;
-        opacity: 0.2;
-
-        &.active {
-            opacity: 1;
-        }
     }
 
     &__button:not(:last-child) {

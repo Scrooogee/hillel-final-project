@@ -233,7 +233,7 @@ a:hover {
   color: #B3B3BA;
 }
 
-.header__link-active {
+.header__link_active {
   color: #FFFFFF;
   background: #F0145A;
 }
@@ -469,6 +469,10 @@ a:hover {
   .menu__link_white-bkg:hover {
     color: #24A3FF;
     border-bottom: 2px solid #24A3FF;
+  }
+  .menu__link_active {
+    color: #F0145A;
+    border-bottom: 2px solid #F0145A;
   }
 }
 
@@ -755,6 +759,34 @@ a:hover {
   stroke: #F0145A;
 }
 
+.button {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 50%;
+  background-color: #24A3FF;
+  opacity: 0.2;
+}
+
+.button:hover {
+  opacity: 0.6;
+}
+
+.button_active {
+  opacity: 1;
+}
+
+.button:not(:last-child) {
+  margin-right: 14px;
+}
+
+@media (min-width: 769px) {
+  .button.d-none {
+    display: none;
+  }
+}
+
 .team {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -821,24 +853,6 @@ a:hover {
 
 .team__button-box {
   text-align: center;
-}
-
-.team__button {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  border: none;
-  border-radius: 50%;
-  background-color: #24A3FF;
-  opacity: 0.2;
-}
-
-.team__button.active {
-  opacity: 1;
-}
-
-.team__button:not(:last-child) {
-  margin-right: 15px;
 }
 
 @media (min-width: 769px) {
@@ -1060,7 +1074,7 @@ a:hover {
 .footer__box {
   padding-top: 30px;
   padding-bottom: 30px;
-  border-top: 4px solid #E6E6F0;
+  border-top: 2px solid #E6E6F0;
   display: grid;
 }
 
@@ -1167,6 +1181,9 @@ a:hover {
   }
   .footer__fb-logo {
     margin-right: 10px;
+  }
+  .footer__fb-logo:hover path {
+    fill: #F0145A;
   }
   .footer__tel {
     display: -webkit-box;
@@ -1384,20 +1401,6 @@ a:hover {
 
 .achievements__button-box {
   text-align: center;
-}
-
-.achievements__button {
-  cursor: pointer;
-  width: 16px;
-  height: 16px;
-  border: none;
-  border-radius: 50%;
-  background-color: #24A3FF;
-  opacity: 0.2;
-}
-
-.achievements__button.active {
-  opacity: 1;
 }
 
 .achievements__button:not(:last-child) {

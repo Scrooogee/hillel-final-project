@@ -15,7 +15,7 @@
                     <div class="header__lang">
                         <a class="header__link header__link_white-bkg" href="#">ук</a>
                         <a class="header__link header__link_white-bkg" href="#">ру</a>
-                        <a class="header__link header__link_white-bkg header__link-active" href="#">en</a>
+                        <a class="header__link header__link_white-bkg header__link_active" href="#">en</a>
                     </div>
                     <p class="header__adress header__adress_white-bkg">Kyiv, Mechnikova str., 14/1</p>
                     <a class="header__tel header__tel_white-bkg" href="tel:0800211927">0800 211 927</a>
@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="header__logo-box">
-            <a href="#" class="header__logo">
+            <a href="index.html" class="header__logo">
                 <img src="img/logo_dark.svg" alt="logo">
             </a>
             <p class="header__page-name">about us</p>
@@ -51,7 +51,7 @@
             <div class="menu__box-menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a class="menu__link menu__link_white-bkg" href="">about us</a>
+                        <a class="menu__link menu__link_white-bkg menu__link_active" href="">about us</a>
                     </li>
                     <li class="menu__item">
                         <a class="menu__link menu__link_white-bkg" href="">services</a>
@@ -142,28 +142,52 @@
                 <h2 class="achievements__titel">achievements</h2>
                 <div class="achievements__cards">
                     <div class="achievements__card">
-                        <img src="img/achivments_logo-1.jpg" alt="achivements-logo-1">
+                        <source media="(min-width: 1025px)" srcset="img/achievements_logo-desktop-1.jpg">
+                        <img src="img/achievements_logo-1.jpg" alt="achivements-logo-1">
                     </div>
-                    <div class="achievements__card achivements__card_screen_big">
-                        <img src="img/achivments_logo-2.jpg" alt="achivements-logo-1">
+                    <div class="achievements__card achievements__card_screen_big">
+                        <source media="(min-width: 1025px)" srcset="img/achievements_logo-desktop-2.jpg">
+                        <img src="img/achievements_logo-2.jpg" alt="achivements-logo-1">
                     </div>
-                    <div class="achievements__card achivements__card_screen_big">
-                        <img src="img/achivments_logo-3.jpg" alt="achivements-logo-1">
+                    <div class="achievements__card achievements__card_screen_big">
+                        <source media="(min-width: 1025px)" srcset="img/achievements_logo-desktop-3.jpg">
+                        <img src="img/achievements_logo-3.jpg" alt="achivements-logo-1">
                     </div>
-                    <div class="achievements__card achivements__card_screen_big">
-                        <img src="img/achivments_logo-4.jpg" alt="achivements-logo-1">
+                    <div class="achievements__card achievements__card_screen_big">
+                        <source media="(min-width: 1025px)" srcset="img/achievements_logo-desktop-4.jpg">
+                        <img src="img/achievements_logo-4.jpg" alt="achivements-logo-1">
                     </div>
                 </div>
                 <div class="achievements__button-box">
-                    <button type="button" class="achievements__button active"></button>
-                    <button type="button" class="achievements__button"></button>
-                    <button type="button" class="achievements__button"></button>
-                    <button type="button" class="achievements__button d-none"></button>
-                    <button type="button" class="achievements__button d-none"></button>
-                    <button type="button" class="achievements__button d-none"></button>
+                    <button type="button" class="button button_active"></button>
+                    <button type="button" class="button"></button>
+                    <button type="button" class="button"></button>
+                    <button type="button" class="button d-none"></button>
+                    <button type="button" class="button d-none"></button>
+                    <button type="button" class="button d-none"></button>
                 </div>
             </section>
         </div>
+        <footer class="footer container">
+            <div class="footer__box">
+                <div class="footer__adress">
+                    Kyiv, Mechnikova str., 14/1 
+                    <a href="#" class="footer__map">On map</a>
+                </div>
+                <div class="footer__contacts">
+                    <a href="" class="footer__fb-logo">
+                        <svg width="39" height="38" viewBox="0 0 39 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF"/>
+                        </svg>                            
+                    </a>
+                    <a href="tel:0800211927" class="footer__tel">0800 211 927</a>
+                    <a href="mailto:contact@forstudy.space" class="footer__mail">contact@forstudy.space</a>
+                </div>
+                <p class="footer__polityc">
+                    © 2021 HLEGAL Law company, LLC
+                </p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>

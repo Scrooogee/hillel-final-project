@@ -65,11 +65,11 @@
         &_white-bkg {
             color: $gray-text;
         }
-    }
 
-    &__link-active {
-        color: $white;
-        background: #F0145A;
+        &_active {
+            color: $white;
+            background: #F0145A;
+        }
     }
 
     &__adress {

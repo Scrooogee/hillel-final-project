@@ -1,0 +1,28 @@
+.button {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: none;
+    border-radius: 50%;
+    background-color: $blue-regular;
+    opacity: 0.2;
+
+    &:hover {
+        opacity: 0.6;
+    }
+
+    &_active {
+        opacity: 1;
+    }
+
+    &:not(:last-child) {
+        margin-right: 14px;
+    }
+
+    @media(min-width: 769px) {
+        
+        &.d-none {
+            display: none;
+        }
+    }
+}

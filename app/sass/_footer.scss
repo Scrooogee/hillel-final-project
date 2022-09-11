@@ -2,7 +2,7 @@
     &__box {
         padding-top: 30px;
         padding-bottom: 30px;
-        border-top: 4px solid $gray-separator;
+        border-top: 2px solid $gray-separator;
         display: grid;
     }
 
@@ -90,6 +90,9 @@
 
         &__fb-logo {
             margin-right: 10px;
+            &:hover path {
+                fill: $pink;
+            }
         }
 
         &__tel {
