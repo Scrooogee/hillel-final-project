@@ -34,7 +34,7 @@
     }
 
     &__tel {
-        margin-top: 10px;
+        margin-top: 6px;
         margin-bottom: 10px;
         font-weight: 700;
         font-size: 16px;
@@ -100,6 +100,7 @@
             align-items: center;
             margin: 0;
             margin-right: 10px;
+            padding-bottom: 5px;
             &::before {
                 content: '';
                 width: 6px;
@@ -113,6 +114,7 @@
         &__mail {
             display: flex;
             align-items: center;
+            padding-bottom: 5px;
             &::before {
                 content: '';
                 width: 6px;

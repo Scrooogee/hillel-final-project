@@ -58,19 +58,18 @@ a {
 }
 
 .titel {
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 8px;
+    margin-bottom: 29px;
     font-weight: bold;
-    font-size: 38px;
-    line-height: 46px;
+    font-size: 30px;
+    line-height: 37px;
     background: $text-gradient-2;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 
-    @media (min-width: 769px) {
-        &__titel {
+    @media(min-width: 769px) {
             font-size: 38px;
-        }
+            line-height: 46px;
     }
 }

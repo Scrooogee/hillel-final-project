@@ -35,7 +35,7 @@
     &__top-box {
         margin: 0 -15px 15px;
         grid-column: span 2;
-        padding: 10px 0;
+        padding: 13px 0;
         background: rgba(245, 245, 250, 0.2);
         &_white-bkg {
             background: $gray-bg;
@@ -44,6 +44,13 @@
 
     &__lang {
         margin-right: 6px;
+        list-style: none;
+        padding: 0;
+        display: flex;
+    }
+
+    &__item {
+            margin-right: 2px;
     }
 
     &__top {
@@ -57,11 +64,12 @@
         font-size: 12px;
         line-height: 15px;
         text-align: center;
-        letter-spacing: 1px;
         color: $white;
         padding: 5px 7px;
         border-radius: 8px;
         text-transform: uppercase;
+        display: block;
+
         &_white-bkg {
             color: $gray-text;
         }
@@ -100,7 +108,7 @@
 
     @media (min-width: 769px) {
 
-        padding-top: 60px;
+        padding-top: 36px;
         padding-bottom: 60px;
 
         &__logo-box {
@@ -126,7 +134,8 @@
 
         &__top-box {
             background-color: transparent;
-            margin: 0 -60px 15px;
+            margin: 0 -60px 18px;
+            padding: 15px 0 12px;
         }
 
         &__link:hover {
@@ -191,7 +200,8 @@
 
     }
 
-    @media (min-width: 1025px) {   
+    @media (min-width: 1025px) {  
+        padding-top: 49px;
 
         grid-template-columns: 40% 60%;
 

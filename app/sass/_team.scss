@@ -1,7 +1,7 @@
 .team {
 
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 57px;
      
     &__article {
         background-color: $gray-bg;
@@ -35,15 +35,16 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        margin-top: 5px;
         margin-bottom: 30px;
     }
 
     &__name {
-        // margin-top: auto;
         font-weight: 700;
         font-size: 16px;
         line-height: 20px;
         color: $gray-text;
+        margin-bottom: 6px;    
     }
 
     &__post {
@@ -57,6 +58,8 @@
     }
 
     @media(min-width: 769px) {
+        padding-top: 80px;
+
         &__copy {
             font-size: 38px;
             line-height: 46px;
@@ -70,7 +73,7 @@
         }
 
         &__img {
-            width: 45%;
+            width: 44%;
         }
 
         &__img img {
@@ -79,8 +82,9 @@
         }
 
         &__text-box {
-            width: 55%;
+            width: 56%;
             border-radius: 0 12px 12px 0;
+            padding: 29px 30px 30px 32px;
         }
     }
 

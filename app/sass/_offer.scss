@@ -1,5 +1,5 @@
 .offer {
-    padding-top: 88px;
+    padding-top: 105px;
     padding-bottom: 30px;
     display: flex;
     flex-direction: column;
@@ -31,7 +31,7 @@
     }
 
     @media (min-width: 769px) {
-        padding-top: 219px;
+        padding-top: 214px;
         
         &__titel {
             max-width: 600px;
@@ -40,10 +40,18 @@
     }
 
     @media (min-width: 1025px) {
-        padding-top: 195px;
+        padding-top: 189px;
         
         &__titel {
             margin-bottom: 289px;
+        }
+    }
+
+    @media(min-width: 1440px) {
+        padding-top: 203px;
+
+        &__titel {
+            margin-bottom: 305px; 
         }
     }
 }

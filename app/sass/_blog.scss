@@ -51,6 +51,11 @@
     }
 
     @media(min-width: 769px) {
+        & > h2 {
+            margin-top: 9px;
+            margin-bottom: 30px;
+        }
+
         &__article-box {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 2fr;

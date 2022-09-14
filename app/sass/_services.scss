@@ -37,13 +37,14 @@
     }
 
     @media (min-width: 769px) {
-        & h2 {
+        & > h2 {
+            margin-top: 10px;
             margin-bottom: 60px;
         }
 
         &__products {
             grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(3, 1fr);
+            grid-template-rows: repeat(3, min-content);
             gap: 60px;
         }
     }
