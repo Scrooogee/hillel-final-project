@@ -552,6 +552,14 @@ a:hover {
   display: block;
 }
 
+.offer__btn:hover {
+  border: 2px solid rgba(240, 20, 90, 0.5);
+}
+
+.offer__btn:hover path {
+  stroke: #F0145A;
+}
+
 @media (min-width: 769px) {
   .offer {
     padding-top: 214px;

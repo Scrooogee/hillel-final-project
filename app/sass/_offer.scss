@@ -19,14 +19,25 @@
         width: 42px;
         height: 42px;
         border-radius: 50%;
-        border: 2px solid rgba($color: #ffff, $alpha: 0.5);
+        border: 2px solid rgba($color: $white, $alpha: 0.5);
         display: flex;
         justify-content: center;
         align-items: center;
         padding-top: 4px;
         text-decoration: none;
+
         & svg {
             display: block;
+        }
+
+        
+
+        &:hover {
+            border: 2px solid rgba($color: $pink, $alpha: 0.5);
+
+            & path {
+            stroke: $pink;
+            }
         }
     }
 
