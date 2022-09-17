@@ -1,11 +1,12 @@
 .team-photo {
-    padding: 30px 0;
-    margin-bottom: 30px;
+    padding: 35px 0;
+    margin-bottom: 31px;
     background-image: url(../img/about-bkg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 
     &__titel {
+        margin-left: 13px;
         font-weight: 700;
         font-size: 36px;
         line-height: 44px;
@@ -25,25 +26,28 @@
             font-size: 46px;
             line-height: 56px;
             letter-spacing: 63px;
+            margin-left: 59px;
         }
 
     }
 
     @media(min-width: 1025px) {
-        padding: 103px 0;
+        padding: 102px 0;
 
         &__titel {
             font-size: 86px;
             line-height: 105px;
+            margin-left: 60px;
         }
     }
 
-    @media(min-width: 1441px) {
-        padding: 163px 0;
+    @media(min-width: 1440px) {
+        padding: 161px 0;
 
         &__titel {
             font-size: 96px;
-            line-height: 117px;
+            line-height: 115px;
+            margin-left: 58px;
         }
     }
 }

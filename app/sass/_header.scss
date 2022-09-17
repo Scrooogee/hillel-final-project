@@ -26,6 +26,7 @@
             background-repeat: no-repeat;
             width: 12px;
             height: 26px;
+            margin-right: 4px;
         }
         &__d-none {
             display: none;
@@ -35,7 +36,7 @@
     &__top-box {
         margin: 0 -15px 15px;
         grid-column: span 2;
-        padding: 13px 0;
+        padding: 10px 0 10px 0;
         background: rgba(245, 245, 250, 0.2);
         &_white-bkg {
             background: $gray-bg;

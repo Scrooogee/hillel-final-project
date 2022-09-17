@@ -1,8 +1,11 @@
 .footer {
-    &__box {
+    &__box{
         padding-top: 30px;
         padding-bottom: 30px;
         border-top: 2px solid $gray-separator;
+    }
+
+    &__wrap {
         display: grid;
     }
 
@@ -56,11 +59,100 @@
         color: $gray-text;
     }
 
-    @media(min-width: 769px){
+    @media(min-width: 769px) {
+        &__wrap {
+            margin: 0 auto;
+            width: 399px;
+            &_foot-hp{
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, min-content);
+                margin: 0;
+                width: 100%;
+            }
+        }
 
-        &__box {
+        &__adress {
+            flex-direction: row;
+            align-self: flex-start;
+        }
+
+        &__map {
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+            margin-left: 10px;
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $gray-text;
+                margin-right: 10px;
+            }
+        }
+
+        &__contacts {
+            grid-column: span 2;
+            flex-direction: row;
+            margin-bottom: 25px;
+        }
+
+        &__fb-logo {
+            margin-right: 10px;
+            &:hover path {
+                fill: $pink;
+            }
+        }
+
+        &__tel {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            margin-right: 10px;
+            padding-bottom: 5px;
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $gray-text;
+                margin-right: 10px;
+            }
+        }
+
+        &__mail {
+            display: flex;
+            align-items: center;
+            padding-bottom: 5px;
+            &::before {
+                content: '';
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: $gray-text;
+                margin-right: 10px;
+            }
+        }
+
+        &__polityc {
+            grid-column: span 2;
+            justify-self: center;
+
+            &_foot-hp {
+                justify-self: flex-end;
+                grid-column-start: 2;
+                grid-row-start: 1;
+            }
+        }
+    }
+
+    @media(min-width: 1025px) {
+
+        &__wrap {
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: repeat(2, 1fr);
+            margin: 0;
+            width: 100%;
         }
 
         &__adress {

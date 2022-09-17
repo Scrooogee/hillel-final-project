@@ -17,16 +17,28 @@
     }
 
     &__copy:not(:last-child) {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     @media(min-width: 1025px) {
+        
+        padding-bottom: 60px;
+
         &__box {
             grid-template-columns: 53% 47%;
+            gap: 62px;
         }
 
         &__box > .titel {
             max-width: 362px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+
+        &__box {
+            grid-template-columns: 61%39%;
+            gap: 59px;
         }
     }
 }

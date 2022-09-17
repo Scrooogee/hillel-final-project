@@ -30,6 +30,27 @@
         min-width: 375px;
         margin: 0 auto;
         padding: 0 60px;
+
+        &_width_1110 {
+            max-width: 1200px;
+            padding: 0 60px;
+        }
+    }
+
+    @media (min-width: 1025px) {
+
+        &_width_1110 {
+            max-width: 1200px;
+            padding: 0 60px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+
+        &_width_1110 {
+            max-width: 1110px;
+            padding: 0 15px;
+        }
     }
 }
 
