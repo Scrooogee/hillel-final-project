@@ -1,4 +1,5 @@
 .footer {
+
     &__box{
         padding-top: 30px;
         padding-bottom: 30px;
@@ -59,7 +60,8 @@
         color: $gray-text;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: 768px) {
+        
         &__wrap {
             margin: 0 auto;
             width: 399px;
@@ -146,7 +148,7 @@
         }
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
 
         &__wrap {
             grid-template-columns: repeat(2, 1fr);

@@ -1,5 +1,4 @@
 .team {
-
     padding-top: 50px;
     padding-bottom: 57px;
      
@@ -57,7 +56,7 @@
         text-align: center;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: 768px) {
         padding-top: 80px;
 
         &__copy {
@@ -66,7 +65,8 @@
         }
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
+        
         &__article {
             flex-direction: row;
             width: 100%;

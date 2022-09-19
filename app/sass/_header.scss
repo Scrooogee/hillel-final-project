@@ -107,8 +107,7 @@
         display: none;
     }
 
-    @media (min-width: 769px) {
-
+    @media (min-width: 768px) {
         padding-top: 36px;
         padding-bottom: 60px;
 
@@ -201,7 +200,7 @@
 
     }
 
-    @media (min-width: 1025px) {  
+    @media (min-width: 1024px) {  
         padding-top: 49px;
 
         grid-template-columns: 40% 60%;

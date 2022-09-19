@@ -52,8 +52,7 @@
         width: auto;
     }
 
-    @media (min-width: 769px) {
-
+    @media (min-width: 768px) {
         padding-top: 64px;
         padding-bottom: 60px;
 
@@ -75,7 +74,7 @@
         }
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         padding-top: 59px;
 
         &__box {
@@ -113,6 +112,7 @@
     }
 
     @media (min-width: 1440px) {
+        
         &__items {
             width: 40%;
             margin-right: 45px;

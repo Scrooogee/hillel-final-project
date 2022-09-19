@@ -44,8 +44,7 @@
         }
     }
 
-    @media (min-width: 769px) {
-
+    @media (min-width: 768px) {
         justify-self: flex-start;
 
         &__btn {
@@ -96,7 +95,7 @@
         }
     }
 
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         justify-self: flex-end;
         align-self: flex-start;
 

@@ -38,7 +38,8 @@
         margin-right: 14px;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: 768px) {
+
         &__cards {
             padding-right: 0;
             padding-left: 0;
@@ -59,7 +60,8 @@
         }
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
+        
         &__card {
             height: 110px;
         }

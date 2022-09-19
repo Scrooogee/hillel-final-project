@@ -50,7 +50,8 @@
         border-top: 4px solid $gray-separator;
     }
 
-    @media(min-width: 769px) {
+    @media(min-width: 768px) {
+        
         & > h2 {
             margin-top: 9px;
             margin-bottom: 30px;
@@ -66,7 +67,7 @@
         }
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
 
         &__article-box{
             grid-template-columns: repeat(3, 1fr);

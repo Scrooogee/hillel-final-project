@@ -1,5 +1,4 @@
 .why-we {
-
     margin-bottom: 31px;
 
     &__article {
@@ -47,8 +46,7 @@
         color: $darkblue;
     }
 
-    @media (min-width: 769px) {
-
+    @media (min-width: 768px) {
         margin-bottom: 60px;
 
         &__article {
@@ -65,8 +63,7 @@
         }
     }
 
-    @media(min-width: 1025px) {
-
+    @media(min-width: 1024px) {
         margin-bottom: 57px;
 
         &__article {
@@ -87,6 +84,7 @@
     }
 
     @media(min-width: 1440px) {
+        
         &__article {
             grid-template-columns: 62% 38%;
         }

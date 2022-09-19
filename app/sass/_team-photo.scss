@@ -2,6 +2,7 @@
     padding: 35px 0;
     margin-bottom: 31px;
     background-image: url(../img/about-bkg.jpg);
+    background-color: $about-bg;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -18,7 +19,11 @@
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
     }
 
-    @media(min-width: 769px) {
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url(../img/about-bkg@2x.jpg);
+    }
+
+    @media(min-width: 768px) {
         padding: 89px 0;
         margin-bottom: 60px;
 
@@ -31,7 +36,7 @@
 
     }
 
-    @media(min-width: 1025px) {
+    @media(min-width: 1024px) {
         padding: 102px 0;
 
         &__titel {
