@@ -6,6 +6,7 @@
         display: flex;
         overflow: auto;
         margin-bottom: 30px;
+        margin-right: -30px;
     }
 
     &__item {
@@ -58,6 +59,7 @@
 
         &__items {
             margin-bottom: 64px;
+            margin-right: -60px;
         }
 
         &__content{

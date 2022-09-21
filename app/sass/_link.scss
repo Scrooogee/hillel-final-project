@@ -17,8 +17,17 @@
             margin-left: 5px;
         }
     
-        &:hover path {
-            stroke: $pink;
+        &:hover {
+
+            svg {
+                transform: translateX(3px);
+                transition: 0.2s;
+            }
+
+            & path {
+                stroke: $pink;
+                fill: 250ms;
+            }
         }
     }
 }

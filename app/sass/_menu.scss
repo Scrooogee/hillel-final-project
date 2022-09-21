@@ -8,6 +8,35 @@
         border: none;
         background-color: transparent;
         border-radius: 8px;
+        width: 18px;
+        height: 13px;
+        left: -7px;
+        top: -3px;
+
+        & span {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: $white;
+    
+            &.bkg_dark {
+                background-color: $darkblue;
+            }
+    
+            &:nth-child(1) {
+                top: 0;
+            }
+    
+            &:nth-child(2) {
+                top: 50%;
+            }
+    
+            &:nth-child(3) {
+                top: 100%;
+            }
+    
+        }
     }
 
     &__box-menu {
@@ -81,12 +110,14 @@
             &:hover {
                 color: $white;
                 border-bottom: 2px solid $white;
+                transition: 250ms;
             }
             &_white-bkg {
                 color: $blue-regular;
                 &:hover {
                     color: $blue-regular;
                     border-bottom: 2px solid $blue-regular;
+                    transition: 250ms;
                 }
             }
 

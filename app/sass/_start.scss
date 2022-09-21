@@ -79,6 +79,7 @@ a {
     text-decoration: none;
     &:hover {
         color: $pink;
+        transition: 250ms;
     }
 }
 

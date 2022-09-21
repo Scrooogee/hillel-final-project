@@ -97,6 +97,10 @@
             grid-column: span 2;
             flex-direction: row;
             margin-bottom: 25px;
+
+            &_hp {
+                margin-bottom: 0;
+            }
         }
 
         &__fb-logo {
@@ -184,8 +188,13 @@
 
         &__fb-logo {
             margin-right: 10px;
+
+            & path{
+                transition: fill 200ms ease;
+            }
+
             &:hover path {
-                fill: $pink;
+                fill:red;
             }
         }
 

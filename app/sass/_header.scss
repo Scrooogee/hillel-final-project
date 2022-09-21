@@ -179,8 +179,12 @@
                 margin-right: 6px;
                 background-color: $gray-separator;
             }
+            & path{
+                transition: fill 200ms ease;
+            }
+
             &:hover path {
-                fill: $pink;
+                fill:red;
             }
         }
 
