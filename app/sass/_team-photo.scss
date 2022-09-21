@@ -16,7 +16,7 @@
         text-transform: uppercase;
         color: $white;
         opacity: 0.8;
-        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+        text-shadow: 0px 15px 30px $text-shadow;
     }
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

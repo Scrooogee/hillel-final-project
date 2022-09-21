@@ -37,7 +37,7 @@
         margin: 0 -15px 15px;
         grid-column: span 2;
         padding: 10px 0 10px 0;
-        background: rgba(245, 245, 250, 0.2);
+        background: $top-box;
         &_white-bkg {
             background: $gray-bg;
         }
@@ -77,7 +77,7 @@
 
         &_active {
             color: $white;
-            background: #F0145A;
+            background: $pink;
         }
     }
 
@@ -139,7 +139,7 @@
         }
 
         &__link:hover {
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: $hed-link-hover;
             color: $white;
         }
 

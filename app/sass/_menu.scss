@@ -13,9 +13,10 @@
     &__box-menu {
         display: none;
         position: absolute;
-        width: 359px;
+        right: 8px;
+        width: calc(100% - 16px);
         background-color: $white;
-        border-radius: 12px 12px 0px 0px;
+        border-radius: 12px;
     }
 
     &__list {
@@ -25,9 +26,15 @@
 
     &__item {
         background-color: $gray-bg;
-        padding: 7px auto;
+        padding-top: 7px;
+        padding-bottom: 7px;
         margin: 15px 12px;
         text-align: center;
+        border-radius: 12px;
+        
+        &_active {
+            background-color: $gray-separator;
+        }
     }
 
     &__link {
@@ -37,11 +44,6 @@
         text-align: center;
         color: $blue-regular;
         white-space: nowrap;
-
-        &_active {
-            color: $pink;
-            border-bottom: 2px solid $pink;
-        }
     }
 
     @media (min-width: 768px) {

@@ -1,3 +1,7 @@
+.mr-bt0 {
+  margin-bottom: 0;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
@@ -75,15 +79,20 @@
   height: auto;
 }
 
-.visually-hidden {
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
 }
 
 a {
@@ -434,9 +443,10 @@ a:hover {
 .menu__box-menu {
   display: none;
   position: absolute;
-  width: 359px;
+  right: 8px;
+  width: calc(100% - 16px);
   background-color: #FFFFFF;
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px;
 }
 
 .menu__list {
@@ -446,9 +456,15 @@ a:hover {
 
 .menu__item {
   background-color: #F5F5FA;
-  padding: 7px auto;
+  padding-top: 7px;
+  padding-bottom: 7px;
   margin: 15px 12px;
   text-align: center;
+  border-radius: 12px;
+}
+
+.menu__item_active {
+  background-color: #E6E6F0;
 }
 
 .menu__link {
@@ -458,11 +474,6 @@ a:hover {
   text-align: center;
   color: #24A3FF;
   white-space: nowrap;
-}
-
-.menu__link_active {
-  color: #F0145A;
-  border-bottom: 2px solid #F0145A;
 }
 
 @media (min-width: 768px) {

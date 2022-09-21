@@ -9,7 +9,7 @@
         position: absolute;
         width: calc(100% - 40px);
         height: 10px;
-        background: #CACADB;
+        background: $gradient-after;
         left: 20px;
         bottom: -10px;
         border-radius: 0 0 12px 12px;
@@ -20,7 +20,7 @@
         position: absolute;
         width: calc(100% - 80px);
         height: 10px;
-        background: #E7E7F2;
+        background: $gradient-before;
         left: 40px;
         bottom: -20px;
         border-radius: 0 0 12px 12px;

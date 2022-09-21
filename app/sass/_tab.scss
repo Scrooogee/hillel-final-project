@@ -34,7 +34,7 @@
 
     &__content {
         padding-top: 30px;
-        border-top: 4px solid rgba(255, 255, 255, 0.3);
+        border-top: 4px solid $tab-border;
     }
 
     &__titel {
@@ -107,12 +107,12 @@
             width: 55%;
             padding: 10px 0 10px 60px;
             border-top: none;
-            border-left: 4px solid rgba(255, 255, 255, 0.3);
+            border-left: 4px solid $tab-border;
         }
     }
 
     @media (min-width: 1440px) {
-        
+
         &__items {
             width: 40%;
             margin-right: 45px;
